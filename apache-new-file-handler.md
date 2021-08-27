@@ -167,7 +167,7 @@ as a user-defined type that maps to our CGI program.
    ~~~apache
    <IfModule mod_actions.c>
       # Associate .cgi extension with the built-in file handler
-      AddHandle cgi-script .cgi
+      AddHandler cgi-script .cgi
 
       # Define a new file type and the program that will process it
       Alias /simple-cgi-bin /usr/local/lib/cgi-bin
